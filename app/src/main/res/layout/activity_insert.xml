@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Insert">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TambahData"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Nama"
+
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/masukan_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/Masukan_Nama"
+                android:inputType="textPersonName"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Telepon"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/Masukan_Tlpn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/MasukanTlpn"
+                android:inputType="text|phone"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Email"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/masukan_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/MasukanEmail"
+                android:inputType="textEmailAddress" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Alamat"
+
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/masukan_Alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/Masukan_alamat"
+                android:inputType="textPersonName"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp">
+        <Button
+            android:id="@+id/simpn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Simpan"
+            android:layout_marginLeft="120dp"
+            android:onClick="run"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
